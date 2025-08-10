@@ -28,5 +28,5 @@ jobs:
       - name: Instalar dependências
         run: npm install
 
-      - name: Rodar testes com Vitest (encerra no fim)
-        run: npx vitest --run --passWithNoTests --forceExit
+      - name: Rodar testes com Vitest (finaliza após execução)
+        run: npx vitest --run --passWithNoTests --no-threads
